@@ -64,7 +64,7 @@ let taxForBill = 0.17;
 // * tax and its output would be: Your total bill is
 // <total bill> $.
 
-let billingMessage = 'Your total bill is:' + (taxForBill * restaurantBill);
+let billingMessage = 'Your total bill is:' + (restaurantBill+ taxForBill * restaurantBill);
 
 // Round the number 50.6 to its nearest integer
 console.log(Math.round(50.6));
