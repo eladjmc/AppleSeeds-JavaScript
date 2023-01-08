@@ -19,4 +19,3 @@ const main = ()=> {
 
 
 
-main();
