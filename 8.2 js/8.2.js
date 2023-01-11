@@ -10,4 +10,4 @@ const myCountry = {
     isIsland : ()=> myCountry.neighbors ? false : true
 }
 myCountry.describe();
-console.log('Is '+myCountry.name + ' an island? => '+myCountry.isIsland().toString());
+console.log('Is '+myCountry.name + ' an island? => '+ myCountry.isIsland().toString());
