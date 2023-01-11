@@ -3,10 +3,13 @@ const book = {
   authorName: "Mad Snail",
   yearOfPublish: "2014",
 };
-const bookUtil = {
+const book2 = {
   name: "Against the gods",
   authorName: "Turtle me",
   yearOfPublish: "2015",
+};
+const bookUtil = {
+
   getFirstPublished: (book1, book2) =>
     book1.yearOfPublish > book2.yearOfPublish ? book2 : book1,
   setNewEdition: (book, year) => {
@@ -30,5 +33,5 @@ const bookUtil = {
 
 console.log(book.publisher);
 bookUtil.setPublisher(book, "jacob", "israel");
-bookUtil.setPublisher(bookUtil, "jacob", "israel");
-console.log(bookUtil.isSamePublisher(bookUtil,book));
+bookUtil.setPublisher(book2, "jacob", "israel");
+console.log(bookUtil.isSamePublisher(book2,book));
