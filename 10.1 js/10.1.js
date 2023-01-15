@@ -7,7 +7,8 @@ isString(string, (str)=>{console.log(str);});
 
 //part 2 & 3
 const firstWordUpperCase = (string , dashMySentence) => {
-    const str = string.charAt(0).toUpperCase() + string.slice(1); //cut all but first letter and put capital of it instead
+    let firstWord=string.split(' ')[0].toUpperCase();
+    const str = string.replace(string.split(' ')[0], firstWord);
     return dashMySentence(str);
 }
 
