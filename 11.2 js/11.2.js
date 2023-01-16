@@ -15,11 +15,16 @@ const evenNumbers = (intArr) => {
 };
 console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
-const showFirstAndLast = (fullArr) => [
-  fullArr[0].toString(),
-  fullArr[fullArr.length - 1].toString(),
-];
-console.log(showFirstAndLast([1, 2, 3, 4, 5, 6, 7]));
+
+
+const showFirstAndLast = (fullArr) => {
+  const arr = fullArr.filter((element)=> typeof element === 'string');
+  return [arr[0],arr[arr.length-1]];
+}
+console.log(showFirstAndLast([1, '2', 3, 4, 5, '6', 7]));
+
+
+
 
 const vowelCount = (str) => {
   const dictOfVowel = { a: true, e: true, i: true, o: true, u: true };
