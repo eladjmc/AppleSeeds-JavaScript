@@ -70,6 +70,7 @@ const swapCase = (str) => str.split(' ').map((word,index) =>{
     if((index %2)){
         return word.toUpperCase();
     }
+    
     return word;
 }).join(' ');
 console.log(swapCase('zebra crossing kind of text words'));
